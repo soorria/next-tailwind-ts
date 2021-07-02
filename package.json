@@ -39,7 +39,7 @@
     "typescript": "^4.2.4"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
+    "*.{ts,tsx,js}": [
       "yarn lint --fix",
       "yarn format"
     ]
