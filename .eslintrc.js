@@ -22,8 +22,8 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:react/recommended',
-    'plugin:react-hooks/recommended',
+    'next',
+    'next/core-web-vitals',
     'plugin:jsx-a11y/recommended',
     'plugin:prettier/recommended', // Make sure this is always the last element in the array.
   ],
@@ -34,6 +34,7 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
+    // Remove anchor check if using anchor as a direct child of next/link component
     'jsx-a11y/anchor-is-valid': [
       'error',
       {
@@ -42,6 +43,7 @@ module.exports = {
         aspects: ['invalidHref', 'preferButton'],
       },
     ],
+    // Check for alt attribute on next/image component
     'jsx-a11y/alt-text': [
       'error',
       {
