@@ -20,7 +20,8 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "importsNotUsedAsValues": "error"
   },
   "exclude": ["node_modules", ".next"],
   "include": ["src/**/*.ts", "src/**/*.tsx"]
